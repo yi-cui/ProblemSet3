@@ -12,8 +12,7 @@ const blocktext = document.getElementById("color-name");
 */
 
 function changeColor(){
-    
-    currentcolor = blockcolor.style.backgroundColor
+    currentcolor = window.getComputedStyle(blockcolor).backgroundColor;
     console.log(currentcolor)
     //Write a condition determine what color it should be changed to
     if(currentcolor == 'rgb(240, 128, 128)'){
